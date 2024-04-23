@@ -54,8 +54,9 @@ function Homepage() {
                           page * ROWS_PER_PAGE,
                           page * ROWS_PER_PAGE + ROWS_PER_PAGE,
                         )
-                        .map((post) => (
+                        .map((post, index) => (
                           <TableRow
+                            data-testid={`table-row-${index}`}
                             key={post.id}
                             tabIndex={-1}
                             hover

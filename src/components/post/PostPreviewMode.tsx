@@ -36,7 +36,7 @@ export function PostPreviewMode({
     if (fetcher.data?.deletedPost) {
       navigate("/");
     }
-  }, [fetcher.data]);
+  }, [fetcher.data, navigate]);
 
   return (
     <Card>
